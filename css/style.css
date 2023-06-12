@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(5, 84, 8);
+    background: linear-gradient(180deg, rgb(6, 106, 46) 20%, rgba(227, 226, 214, 1) 20%);
+    height: 100%;
+}
+
+.main{
+    margin-top: 15vh;
+}
+
+/*stutturali*/
+.struttura1 {
+    background-color: aqua;
+    height: 700px;
+}
+
+.struttura2 {
+    background-color: rgb(121, 130, 124);
+    height: 700px;
+}
+
+.sfondo-contatti {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+}
+
+
