@@ -14,6 +14,11 @@ body{
     margin-top: 15vh;
 }
 
+.sfondo-chat{
+    background-image: url(../img/mine.jpg);
+    height: 600px;
+}
+
 /*stutturali*/
 .struttura1 {
     background-color: aqua;
@@ -25,9 +30,19 @@ body{
     height: 700px;
 }
 
+.col-2{
+    background-color: aquamarine;
+    height: 20px;
+}
+
+.col-8{
+    background-color: rgb(214, 127, 255);
+    height: 20px;
+}
+
 .sfondo-contatti {
     background-color: rgb(255, 255, 255);
-    border: 1px solid gray;
+    border: 1px solid lightgray;
 }
 
 
