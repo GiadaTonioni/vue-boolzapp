@@ -67,6 +67,15 @@ body{
     margin-bottom: 15px;
 }
 
+.cerca{
+    width: 420px;
+}
+
+.background-search{
+    background-color: lightgray;
+    padding: 5px;
+}
+
 /*stutturali*/
 .struttura1 {
     background-color: aqua;
