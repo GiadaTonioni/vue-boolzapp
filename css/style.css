@@ -22,6 +22,7 @@ body{
 .sfondo-contatti {
     background-color: rgb(255, 255, 255);
     border: 1px solid lightgray;
+    padding: 5px;
 }
 
 .sfondo-up{
@@ -63,18 +64,12 @@ body{
     font-size: 12px;
     color: grey;
     text-decoration: underline;
-    margin-left: 60px;
     margin-bottom: 15px;
 }
 
 /*stutturali*/
 .struttura1 {
     background-color: aqua;
-    height: 700px;
-}
-
-.struttura2 {
-    background-color: rgb(121, 130, 124);
     height: 700px;
 }
 
