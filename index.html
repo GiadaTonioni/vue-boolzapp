@@ -60,77 +60,22 @@
                                         <div class="col-3">
                                             <div class="contatto">
                                                 <div class="avatar" v-for="(contact,index) in contacts" :class="activeContact === index ? 'active' : '' "@click="setActiveContact(index)">
-                                                    <img :src="contact.img" alt="img" />
+                                                    <img class="avatar" :src="contact.img" :alt="contacts.name" />
+                                                    <p class="inline">{{contacts.name}}</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-9">
-                                            <p class="inline">Michele <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
+                                            <div class="nome-ora">
+                                                <p class="inline"> Michele <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
+                                            </div>      
                                         </div>
                                     </div>
-                                    <div class="row sfondo-contatti">
-                                        <div class="col-3">
-                                            <img src="./img/avatar_2.jpg" class="avatar" alt="">
-
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="inline">Fabio <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row sfondo-contatti">
-                                        <div class="col-3">
-                                            <img src="./img/avatar_3.jpg" class="avatar" alt="">
-
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="inline">Samuele <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row sfondo-contatti">
-                                        <div class="col-3">
-                                            <img src="./img/avatar_4.jpg" class="avatar" alt="">
-
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="inline">Alessandro B. <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row sfondo-contatti">
-                                        <div class="col-3">
-                                            <img src="./img/avatar_5.jpg" class="avatar" alt="">
-
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="inline">Alessandro L. <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row sfondo-contatti">
-                                        <div class="col-3">
-                                            <img src="./img/avatar_6.jpg" class="avatar" alt="">
-
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="inline">Claudia <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row sfondo-contatti">
-                                        <div class="col-3">
-                                            <img src="./img/avatar_7.jpg" class="avatar" alt="">
-
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="inline">Federico <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row sfondo-contatti">
-                                        <div class="col-3">
-                                            <img src="./img/avatar_8.jpg" class="avatar" alt="">
-
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="inline">Davide <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
-                                        </div>
-                                    </div>
+                                    <!-- QUA SOPRA TUTTO INCASINATO  -->
+                                    
+                                    
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -144,7 +89,11 @@
                                             <div class="col-12 sfondo-up">
                                                 <div class="container- parte-io">
                                                     <div class="row d-flex justify-content-between">
-                                                        <div class="col-4"><img :src="contacts[activeContact].img" class="avatar" :alt="contacts[activeContact].name"><p class="inline">Sofia</p></div>
+                                                        <div class="col-4"><img :src="contacts[activeContact].img" class="avatar" :alt="contacts[activeContact].name">
+                                                            <div class="nome-ora" :src="contacts[activeContact].name">
+                                                                <p class="inline"> {{contacts[activeContact].name}} <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
+                                                            </div> 
+                                                        </div>
                                                         
                                                         <div class="col-4">
                                                             <i class="fa-solid fa-magnifying-glass icon-gray"></i>

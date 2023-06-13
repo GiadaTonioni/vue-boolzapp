@@ -29,35 +29,35 @@ createApp({
                     messages: ['Alla fine ho le ferie ad Agosto', 'Perfetto, organizziamoci', 'ci vediamo in bar']
                 },
                 {
-                    name: 'Michele',
+                    name: 'Alessandro B.',
                     avatar: '4',
                     visibile: true,
                     img: './img/avatar_4.jpg',
                     messages: ['Come stai?', 'Potrebbe andare meglio', 'mi dispiace, come mai?']
                 },
                 {
-                    name: 'Michele',
+                    name: 'Alessandro L.',
                     avatar: '5',
                     visibile: false,
                     img: './img/avatar_5.jpg',
                     messages: ['Come stai?', 'Potrebbe andare meglio', 'mi dispiace, come mai?']
                 },
                 {
-                    name: 'Michele',
+                    name: 'Claudia',
                     avatar: '6',
                     visibile: true,
                     img: './img/avatar_6.jpg',
                     messages: ['Come stai?', 'Potrebbe andare meglio', 'mi dispiace, come mai?']
                 },
                 {
-                    name: 'Michele',
+                    name: 'Federico',
                     avatar: '7',
                     visibile: true,
                     img: './img/avatar_7.jpg',
                     messages: ['Come stai?', 'Potrebbe andare meglio', 'mi dispiace, come mai?']
                 },
                 {
-                    name: 'Michele',
+                    name: 'Davide',
                     avatar: '8',
                     visibile: true,
                     img: './img/avatar_8.jpg',
