@@ -65,5 +65,10 @@ createApp({
                 },
             ]
         }
+    },
+    methods:{
+        setActiveContact(index){
+            this.activeContact = index
+        }
     }
-})
+}).mount('#app')

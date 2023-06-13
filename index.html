@@ -58,7 +58,11 @@
                                 <div class="col-12 ">
                                     <div class="row sfondo-contatti">
                                         <div class="col-3">
-                                            <img src="./img/avatar_1.jpg" class="avatar" alt="">
+                                            <div class="contatto">
+                                                <div class="avatar" v-for="(contact,index) in contacts" :class="activeContact === index ? 'active' : '' "@click="setActiveContact(index)">
+                                                    <img :src="contact.img" alt="img" />
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-9">
                                             <p class="inline">Michele <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
