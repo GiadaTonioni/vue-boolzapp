@@ -11,12 +11,12 @@ body{
 }
 
 .main{
-    margin-top: 15vh;
+    margin-top: 12vh;
 }
 
 .sfondo-chat{
     background-image: url(../img/mine.jpg);
-    height: 600px;
+    height: 570px;
 }
 
 .sfondo-contatti {
@@ -27,6 +27,7 @@ body{
 
 .sfondo-up{
     background-color: lightgray;
+    border: 1px solid gray;
 }
 
 .avatar{
@@ -69,6 +70,8 @@ body{
 
 .cerca{
     width: 420px;
+    font-size: 12px;
+    padding: 4px;
 }
 
 .background-search{
@@ -76,21 +79,12 @@ body{
     padding: 5px;
 }
 
-/*stutturali*/
-.struttura1 {
-    background-color: aqua;
-    height: 700px;
+.message-space{
+    background-color: rgb(232, 217, 164);
+    padding: 15px;
 }
 
-.col-2{
-    background-color: aquamarine;
-    height: 20px;
-}
 
-.col-8{
-    background-color: rgb(214, 127, 255);
-    height: 20px;
-}
 
 
 
