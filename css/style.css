@@ -80,7 +80,7 @@ body{
 }
 
 .message-space{
-    background-color: rgb(232, 217, 164);
+    background-color: rgb(238, 236, 236);
     padding: 15px;
 }
 
@@ -92,7 +92,7 @@ body{
 }
 
 .message-sent{
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(238, 236, 236);
     border-radius: 35px;
     padding: 15px;
 }

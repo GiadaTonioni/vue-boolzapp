@@ -140,7 +140,7 @@
                                             <div class="col-12 sfondo-up">
                                                 <div class="container- parte-io">
                                                     <div class="row d-flex justify-content-between">
-                                                        <div class="col-4"><img src="./img/avatar_io.jpg" class="avatar" alt=""><p class="inline">Sofia</p></div>
+                                                        <div class="col-4"><img :src="contacts[activeContact].img" class="avatar" :alt="contacts[activeContact].name"><p class="inline">Sofia</p></div>
                                                         
                                                         <div class="col-4">
                                                             <i class="fa-solid fa-magnifying-glass icon-gray"></i>
@@ -158,12 +158,12 @@
                                     <div class="col-12 sfondo-chat">
                                         <div class="row d-flex justify-content-end">
                                             <div class="col-4">
-                                                <div class="message-received">Tutto bene?</div>
+                                                <div class="message-received" v-for="(contact, index) in contacts">{{contact.message}}</div>
                                             </div>
                                         </div>
                                         <div class="row d-flex justify-content-start">
                                             <div class="col-4">
-                                                <div class="message-sent">Insomma</div>
+                                                <div class="message-sent"v-for="(contact, index) in contacts">{{contacts.message}}</div>
                                             </div>
                                         </div>
                                         
