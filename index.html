@@ -60,7 +60,7 @@
                                         <div class="col-3">
                                             <div class="contatto">
                                                 <div class="avatar" v-for="(contact,index) in contacts" :class="activeContact === index ? 'active' : '' "@click="setActiveContact(index)">
-                                                    <img class="avatar" :src="contact.img" />
+                                                    <img class="avatar" :src="contact.avatar" />
 
                                                 </div>
                                             </div>
@@ -72,11 +72,6 @@
                                             </div>      
                                         </div>
                                     </div>
-                                    <!-- QUA SOPRA TUTTO INCASINATO GRAFICAMENTE  -->
-                                    
-                                    
-                                    
-                                    
                                 </div>
                             </div>
                         </div>
@@ -90,8 +85,8 @@
                                             <div class="col-12 sfondo-up">
                                                 <div class="container- parte-io">
                                                     <div class="row d-flex justify-content-between">
-                                                        <div class="col-4"><img :src="contacts[activeContact].img" class="avatar" :alt="contacts[activeContact].name">
-                                                            <div class="nome-ora" :src="contacts[activeContact].name">
+                                                        <div class="col-4"><img :src="contacts[activeContact].avatar" class="avatar" :alt="contacts[activeContact].name">
+                                                            <div class="nome-ora">
                                                                 <p class="inline"> {{contacts[activeContact].name}} <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
                                                             </div> 
                                                         </div>
@@ -111,13 +106,10 @@
                                 <div class="row">
                                     <div class="col-12 sfondo-chat">
                                         <div class="row d-flex justify-content-end">
-                                            <div class="col-4">
-                                                <div class="message-received" v-for="(contact, index) in contacts">{{contact.message}}</div>
-                                            </div>
-                                        </div>
-                                        <div class="row d-flex justify-content-start">
-                                            <div class="col-4">
-                                                <div class="message-sent"v-for="(contact, index) in contacts">{{contacts.message}}</div>
+                                            <div class="col">
+                                                <div :class="message.status === 'received' ? 'message-received' : 'message-sent' " v-for="(message, index) in contacts[activeContact].messages">{{message.message}}
+
+                                                </div>
                                             </div>
                                         </div>
                                         
