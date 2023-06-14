@@ -28,9 +28,11 @@
                                             <div class="col-4"><img src="./img/avatar_io.jpg" class="avatar" alt=""><p class="inline">Sofia</p></div>
                                             
                                             <div class="col-4">
-                                                <i class="fa-sharp fa-solid fa-circle-notch icon-gray"></i>
-                                                <i class="fa-solid fa-message icon-gray"></i>
-                                                <i class="fa-solid fa-ellipsis-vertical icon-gray"></i>
+                                                <div class="icone-piccole">
+                                                    <i class="fa-sharp fa-solid fa-circle-notch icon-gray"></i>
+                                                    <i class="fa-solid fa-message icon-gray"></i>
+                                                    <i class="fa-solid fa-ellipsis-vertical icon-gray"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -85,16 +87,18 @@
                                             <div class="col-12 sfondo-up">
                                                 <div class="container- parte-io">
                                                     <div class="row d-flex justify-content-between">
-                                                        <div class="col-4"><img :src="contacts[activeContact].avatar" class="avatar" :alt="contacts[activeContact].name">
+                                                        <div class="col"><img :src="contacts[activeContact].avatar" class="avatar" :alt="contacts[activeContact].name">
                                                             <div class="nome-ora">
                                                                 <p class="inline"> {{contacts[activeContact].name}} <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
                                                             </div> 
                                                         </div>
                                                         
                                                         <div class="col-4">
-                                                            <i class="fa-solid fa-magnifying-glass icon-gray"></i>
-                                                            <i class="fa-solid fa-paperclip icon-gray"></i>
-                                                            <i class="fa-solid fa-ellipsis-vertical icon-gray"></i>
+                                                            <div class="icone-piccole">
+                                                                <i class="fa-solid fa-magnifying-glass icon-gray"></i>
+                                                                <i class="fa-solid fa-paperclip icon-gray"></i>
+                                                                <i class="fa-solid fa-ellipsis-vertical icon-gray"></i>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
