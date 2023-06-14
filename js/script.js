@@ -183,7 +183,11 @@ createApp({
                 text: this.new_message,
                 status: 'sent'
             }
-            this.contacts.push(obj)
-        }
+            this.contacts[this.activeContact].messages.push(obj)
+        },
+        deleteMessage(index){
+            this.contacts[this.activeContact].messages.splice(index,1)
+        
     }
+}
 }).mount('#app')

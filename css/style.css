@@ -38,6 +38,18 @@ body{
     display: inline-block;
 }
 
+.style{
+    background-color: transparent;
+    color: gray;
+    border: none;
+    padding: 5px;
+}
+
+button{
+    background-color: none;
+    border: none;
+}
+
 .nome-ora{
     cursor: pointer;
 }
@@ -58,6 +70,7 @@ body{
 .icone-piccole{
     float: right;
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 .notifiche{

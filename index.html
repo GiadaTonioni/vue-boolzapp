@@ -112,7 +112,13 @@
                                         <div class="row d-flex justify-content-end">
                                             <div class="col-9">
                                                 <div :class="message.status === 'received' ? 'message-received' : 'message-sent' " v-for="(message, index) in contacts[activeContact].messages">{{message.message}}
-
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary dropdown-toggle style" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                        <ul class="dropdown-menu">
+                                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                                          <li @click="deleteMessage()"><a class="dropdown-item" href="#">Elimina Messaggio</a></li>
+                                                        </ul>
+                                                      </div>
                                                 </div>
                                             </div>
                                         </div>
