@@ -60,18 +60,19 @@
                                         <div class="col-3">
                                             <div class="contatto">
                                                 <div class="avatar" v-for="(contact,index) in contacts" :class="activeContact === index ? 'active' : '' "@click="setActiveContact(index)">
-                                                    <img class="avatar" :src="contact.img" :alt="contacts.name" />
-                                                    <p class="inline">{{contacts.name}}</p>
+                                                    <img class="avatar" :src="contact.img" />
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-9">
                                             <div class="nome-ora">
-                                                <p class="inline"> Michele <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
+                                                <p :alt="contacts.name" v-for="(contact,index) in contacts" :class="activeContact === index ? 'active' : '' "@click="setActiveContact(index)"> {{contact.name}}
+                                                <br> <span class="txt-grey">Ultimo messaggio inviato</span></p>
                                             </div>      
                                         </div>
                                     </div>
-                                    <!-- QUA SOPRA TUTTO INCASINATO  -->
+                                    <!-- QUA SOPRA TUTTO INCASINATO GRAFICAMENTE  -->
                                     
                                     
                                     

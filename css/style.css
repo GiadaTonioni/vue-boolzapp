@@ -34,6 +34,7 @@ body{
     border-radius: 50%;
     width: 50px;
     cursor: pointer;
+    margin-top: 6px;
 }
 
 .inline{
