@@ -6,7 +6,6 @@ createApp({
     data(){
         return{
             activeContact : 0,
-            activeChat : 0,
             new_message: '',
             contacts: [
                 {
@@ -178,15 +177,13 @@ createApp({
         setActiveContact(index){
             this.activeContact = index
         },
-        setActiveChat(index){
-            this.activeChat = index
-        },
         addMessage(){
+            console.log(this.new_message)
             let obj = {
                 text: this.new_message,
-                done:false
+                status: 'sent'
             }
-            this.messages.push(obj)
+            this.contacts.push(obj)
         }
     }
 }).mount('#app')
