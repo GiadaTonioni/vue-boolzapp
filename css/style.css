@@ -38,6 +38,11 @@ body{
     display: inline-block;
 }
 
+.orario{
+    font-size: 12px;
+    color: gray;
+}
+
 .style{
     background-color: transparent;
     color: gray;

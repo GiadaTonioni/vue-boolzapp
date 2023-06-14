@@ -187,7 +187,16 @@ createApp({
         },
         deleteMessage(index){
             this.contacts[this.activeContact].messages.splice(index,1)
+        },
+        answerMessage(){
+            setTimeout(function(){
+                let obj = {
+                    message: 'OK',
+                    status: 'received'
+                }
+                this.contacts[this.activeContact].messages.push(obj)
+            }, 2000);
+        }
         
-    }
 }
 }).mount('#app')
