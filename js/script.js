@@ -180,7 +180,7 @@ createApp({
         addMessage(){
             console.log(this.new_message)
             let obj = {
-                text: this.new_message,
+                message: this.new_message,
                 status: 'sent'
             }
             this.contacts[this.activeContact].messages.push(obj)
